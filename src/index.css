@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  [id] {
+    scroll-margin-top: 80px; 
+  }
+
+@theme {
+
+  --color-brand-primary: #B7FF1A;
+  --color-brand-secondary: #8FCC14;
+
+  --font-system: system-ui, -apple-system, sans-serif;
+
+
+  --spacing-ultra: 5rem;
+}

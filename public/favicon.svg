@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="200" fill="black" />
+  
+  <text 
+    x="50%" 
+    y="40%" 
+    dominant-baseline="middle" 
+    text-anchor="middle" 
+    font-family="sans-serif" 
+    font-weight="900" 
+    font-style="italic" 
+    font-size="80" 
+    fill="#B6FF00" 
+    letter-spacing="-2"
+  >
+    DEMO
+  </text>
+  
+  <text 
+    x="50%" 
+    y="65%" 
+    dominant-baseline="middle" 
+    text-anchor="middle" 
+    font-family="sans-serif" 
+    font-weight="900" 
+    font-style="italic" 
+    font-size="90" 
+    fill="white" 
+    letter-spacing="2"
+  >
+    GYM
+  </text>
+</svg>
