@@ -4,16 +4,17 @@ import { FaStar, FaQuoteLeft } from "react-icons/fa6";
 export default function Testimonios() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/api/comentarios")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch((err) => console.log("Error:", err));
-  }, []);
+
+useEffect(() => {
+  fetch('https://demo-gym-backend.onrender.com/api/comentarios') 
+    .then(response => response.json())
+    .then(data => setComentarios(data))
+    .catch(error => console.error("Error:", error));
+}, []);
 
   return (
     <section className="bg-black py-20 px-4">
-      {/* HEADER DE LA SECCIÓN (Captura 3) */}
+   
       <div className="text-center mb-16">
         <h2 className="text-white text-4xl md:text-5xl font-bold mb-4">
           Historias de Éxito
@@ -23,7 +24,7 @@ export default function Testimonios() {
         </p>
       </div>
 
-      {/* GRID DE TESTIMONIOS (Captura 1) */}
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {data.map((item) => (
           <article 
