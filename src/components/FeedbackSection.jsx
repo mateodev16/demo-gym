@@ -5,12 +5,14 @@ export default function Testimonios() {
   const [data, setData] = useState([]);
 
 
-useEffect(() => {
-  fetch('https://demo-gym-backend.onrender.com/api/comentarios') 
-    .then(response => response.json())
-    .then(data => setComentarios(data))
-    .catch(error => console.error("Error:", error));
-}, []);
+  useEffect(() => {
+    fetch('https://demo-gym-backend.onrender.com/api/comentarios') 
+      .then(response => response.json())
+      .then(data => {
+        setData(data); 
+      })
+      .catch(error => console.error("Error:", error));
+  }, []);
 
   return (
     <section className="bg-black py-20 px-4">
