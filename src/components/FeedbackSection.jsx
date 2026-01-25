@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaStar, FaQuoteLeft } from "react-icons/fa6";
-import TestimonioSkeleton from "./TestimonioSkeleton"; 
+import TestimonialsSkeleton from "./TestimonialsSkeleton"; 
 
-export default function Testimonios() {
+export default function Testimonials() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +31,7 @@ export default function Testimonios() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {loading
           ? 
-            Array(3).fill(0).map((_, i) => <TestimonioSkeleton key={i} />)
+            Array(3).fill(0).map((_, i) => <TestimonialsSkeleton key={i} />)
           : 
             data.map((item) => (
               <article
